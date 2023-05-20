@@ -139,9 +139,7 @@ export default function Publications(){
                     </div>
                 </div>
             </section>
-            <section className="join-us container mx-auto px-2">
-                <JoinUs />
-            </section>
+            <JoinUs />
             <Footer />
         </>
     )

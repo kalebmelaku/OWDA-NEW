@@ -30,7 +30,7 @@ export default function NavBar() {
                             <li className='nav-link'>
                                 <a
                                     href="/contact"
-                                    className="block py-2 pl-3 pr-4  md:border-0 md:p-0  "
+                                    className={`${location.pathname === '/contact' ? 'active' : ''} block py-2 pl-3 pr-4  md:border-0 md:p-0`}
                                 >Contact Us</a>
                             </li>
                             <li className='nav-link'>

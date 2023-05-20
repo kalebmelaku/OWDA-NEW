@@ -7,6 +7,7 @@ import WhoWeAre from './pages/whoWeAre'
 import WhatWeDo from './pages/whatWeDo';
 import About from './pages/about';
 import Publications from './pages/publications'
+import Contact from './pages/contact'
 
 export default function App(){
   return (
@@ -20,6 +21,7 @@ export default function App(){
         <Route path='/what' element={<WhatWeDo/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/publications' element={<Publications/>} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
     </>
   )

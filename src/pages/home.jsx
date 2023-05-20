@@ -67,9 +67,7 @@ export default function Home() {
             <section className="impact bg-gray-200 container mx-auto">
                 <Impact/>
             </section>
-            <section className="join-us container mx-auto px-2">
                 <JoinUs/>
-            </section>
             <section className=" container mx-auto px-2">
                 <Partners/>
             </section>

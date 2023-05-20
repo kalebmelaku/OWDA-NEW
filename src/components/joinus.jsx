@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 export default function JoinUs() {
     return (
         <>
+		<section className="join-us container mx-auto px-2">
 				<div className="join-us-elements">
 					<img src={Img} alt="join-us" />
 					<div className="detail text-center">
@@ -10,6 +11,7 @@ export default function JoinUs() {
 						<Link to="#" className="bg-red-700 text-white py-3 px-5">Donate</Link>
 					</div>
 				</div>
+		</section>
         </>
     );
 }
