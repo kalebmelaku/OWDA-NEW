@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
 import Img from '../assets/home-img.png'
 import { PropTypes } from "prop-types";
+
 export default function Featured(props) {
     return (
         <>
@@ -14,16 +16,18 @@ export default function Featured(props) {
 						<p className="mb-4">
 							{props.body}
 						</p>
-						<a href="#" className="btn btn-green">Read More</a>
+						{props.button === 'Download' ? <a href="#" className="btn btn-green">Download</a> : <a href="#" className="btn btn-green">Read More</a>}
+					
 					</div>
 					
 			
 			
-		
         </>
     )
 }
-Featured.propType = {
+
+Featured.propTypes = {
     title: PropTypes.string.isRequired,
-    body: PropTypes.string.isRequired
+    body: PropTypes.string.isRequired,
+	button: PropTypes.string.isRequired,
 }

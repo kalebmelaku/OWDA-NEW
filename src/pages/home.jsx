@@ -72,7 +72,7 @@ export default function Home() {
             <section className=" container mx-auto px-2">
                 <Partners/>
             </section>
-            <section className="px-2">
+            <section className="">
                 <Footer/>
             </section>
             {/*

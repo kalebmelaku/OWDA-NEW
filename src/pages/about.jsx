@@ -13,7 +13,7 @@ export default function About() {
             <Carousal />
 
             <section className="about container mx-auto px-2">
-                <p className="text-2xl mt-4 mb-4">The Organization for Welfare Development in
+                <p className="text-xl mt-4 mb-4">The Organization for Welfare Development in
                     Action (OWDA) is a non-profit organization based
                     in the Somali region of Ethiopia. Our mission is
                     to provide support and improve access to basic
@@ -21,7 +21,7 @@ export default function About() {
                     development and peace building initiatives,
                     throughout this region. poverty, fear and
                     oppression.</p>
-                <p className="text-2xl mt-4 mb-4">OWDA has gained recognition amongst international
+                <p className="text-xl mt-4 mb-4">OWDA has gained recognition amongst international
                     aid organizations due their work within the local
                     communities of eastern Ethiopia since 1999 where
                     they have achieved great strides towards
@@ -33,20 +33,20 @@ export default function About() {
                     vaccinations; establishing new schools with
                     developing educational programming; providing
                     essential skills training and vocational
-                    activities alongside micro'nance operations so
+                    activities alongside microfinance operations so
                     individuals can and alternative livelihoods or
                     start up small businesses.</p>
             </section>
             <section className="development px-2">
                 <div className="container max-w-screen-lg mx-auto text-left">
                     <h1 className="green text-left">What we stand for</h1>
-                    <p className="text-left text-2xl about">
+                    <p className="text-left text-xl about">
                         Our goal is to promote conditions of sustainable human development through implementing programs/ projects on basic service delivery, economic opportunities, livelihood diversification, Disaster Risk Management and climate change adaptations as well as advocacy and protection.
                     </p>
-                    <p className="text-left font-bold text-2xl about">
+                    <p className="text-left font-bold text-xl about">
                     For over 23 years we have been working with the community of East africa transforming their lives with sustainable development programs.
                     </p>
-                    <p className="text-left text-2xl about">
+                    <p className="text-left text-xl about">
                     Today we are a team of over 400 highly skilled and dedicated professionals who share an exceptional depth and diversity of experience.
                     </p>
                 </div>

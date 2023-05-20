@@ -6,6 +6,7 @@ import JobList from './pages/jobList'
 import WhoWeAre from './pages/whoWeAre'
 import WhatWeDo from './pages/whatWeDo';
 import About from './pages/about';
+import Publications from './pages/publications'
 
 export default function App(){
   return (
@@ -18,6 +19,7 @@ export default function App(){
         <Route path='/who' element={<WhoWeAre/>} />
         <Route path='/what' element={<WhatWeDo/>} />
         <Route path='/about' element={<About/>} />
+        <Route path='/publications' element={<Publications/>} />
       </Routes>
     </>
   )

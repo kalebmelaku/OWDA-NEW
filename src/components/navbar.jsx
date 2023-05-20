@@ -11,7 +11,7 @@ export default function NavBar() {
     };
     return (
         <>
-            <nav className="bg-white  border-0 shadow-2xl dark:bg-gray-900">
+            <nav className="bg-white  border-0 shadow-2xl">
                 <div
                     className="max-w-screen-xl container flex flex-wrap items-center justify-end mx-auto p-1 px-4"
                 >
@@ -20,14 +20,14 @@ export default function NavBar() {
                         <ul
                             className="font-medium flex 
                             items-center justify-end md:p-0 
-                            rounded-lg 
+                        -lg 
                             md:flex-row md:space-x-8 
                             md:mt-0 md:border-0 md:bg-white"
                         >
                             <li className='nav-link'>
                                 <a
                                     href="/contact"
-                                    className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                    className="block py-2 pl-3 pr-4  md:border-0 md:p-0  "
                                 >Contact Us</a>
                             </li>
                             <li className='nav-link'>
@@ -37,7 +37,7 @@ export default function NavBar() {
                     </div>
                 </div>
             </nav>
-            <nav className="bg-white dark:bg-gray-900">
+            <nav className="bg-white  bg-gray-900">
                 <div
                     className="max-w-screen-xl container flex flex-wrap items-center justify-between mx-auto p-2 px-4"
                 >
@@ -47,7 +47,7 @@ export default function NavBar() {
                     <button
                         data-collapse-toggle="navbar-default"
                         type="button"
-                        className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        className="inline-flex items-center p-2 ml-3 text-sm text-gray-500-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200  text-gray-400  hover:bg-gray-700  focus:ring-gray-600"
                         aria-controls="navbar-default"
                         aria-expanded="false"
                         onClick={handleMenuToggle}
@@ -59,52 +59,51 @@ export default function NavBar() {
                         <ul
                             className="font-medium 
                             flex flex-col p-4 md:p-0 
-                            mt-4 rounded-lg bg-gray-50
+                            mt-4-lg bg-gray-50 md:bg-white-50
                             md:flex-row md:space-x-8 
                             md:mt-0 md:border-0 md:bg-white 
-                            dark:bg-gray-800 md:dark:bg-gray-900 
-                            dark:border-gray-700"
+                            "
                         >
                             <li className='nav-link'>
                                 <a
                                     href="/who"
-                                    className="block py-2 pl-3 pr-4 rounded md:bg-transparent md:p-0 dark:text-white"
+                                    className="block py-2 pl-3 pr-4 md:p-0 "
                                 >Who we are</a>
                             </li>
                             <li className='nav-link'>
                                 <a
                                     href="/what"
-                                    className="block py-2 pl-3 pr-4 text-gray-900 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                    className="block py-2 pl-3 pr-4 text-black  md:border-0 md:p-0  "
                                 >What we do</a>
                             </li>
                             <li className='nav-link'>
                                 <a
                                     href="/about"
-                                    className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                    className="block py-2 pl-3 pr-4  md:border-0 md:p-0  "
                                 >About Us</a>
                             </li>
                             <li className='nav-link'>
                                 <a
                                     href="/publications"
-                                    className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                    className="block py-2 pl-3 pr-4  md:border-0 md:p-0  "
                                 >Publications</a>
                             </li>
                             <li className='nav-link'>
                                 <a
                                     href="/resource"
-                                    className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                    className="block py-2 pl-3 pr-4  md:border-0 md:p-0  "
                                 >Resource center</a>
                             </li>
                             <li className='nav-link'>
                                 <Link
                                     to="/vacancy"
-                                    className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                    className="block py-2 pl-3 pr-4  md:border-0 md:p-0  "
                                 >Vacancy</Link>
                             </li>
                         </ul>
                     </div>
                         <div className={`flex md:block ${showNav ? 'block' : 'hidden'} ml-4 mt-4 md:mt-0`}>
-                            <Link to='/donate'  className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-red-600 dark:hover:bg-blue-700 dark:focus:ring-red-800">Donate</Link>
+                            <Link to='/donate'  className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium-lg text-sm px-4 py-2 text-center mr-3 md:mr-0  bg-red-600  hover:bg-blue-700  focus:ring-red-800">Donate</Link>
                         </div>
                 </div>
             </nav>

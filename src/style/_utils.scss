@@ -2,6 +2,8 @@
 //variables
 $green: #009245;
 $black: #2D2926;
+$orange: #E86A2F;
+$light-green: #ccebcb;
 
 $green-hover: rgb(0, 87, 40);
 
@@ -58,7 +60,10 @@ a.card-link {
         color: #fff;
     }
 }
-
+.btn-orange{
+    background-color: $orange !important;
+    border: $orange;
+}
 .btn-programs {
     margin: 12rem 0 !important;
     padding: 10px 55px;
@@ -81,7 +86,7 @@ a.card-link {
     display: none !important;
 }
 .header-with-line{
-    font-size: 2.3rem;
+    font-size: clamp(1.5rem, 15vh, 1.8rem);
     margin-bottom: 2rem;
     position: relative;
     &::before{
@@ -90,6 +95,7 @@ a.card-link {
         top: 50%;
         right: 0;
         width: 70%;
+        min-width: 20%;
         height: 1px;
         background-color: $green;
     }

@@ -5,7 +5,7 @@ export default function WhatBox(props) {
     return (
         <>
             <div
-                className="card-custom card-custom-two bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                className="card-custom card-custom-two bg-white border border-gray-200 rounded-lg shadow  bg-gray-800  border-gray-700"
             >
                 <div className="img-container">
                     <img src={Img} alt="image" />

@@ -4,14 +4,14 @@ export default function Box(props) {
     return (
         <>
             <div
-                className="card-custom p-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                className="card-custom p-4 bg-white border border-gray-200 rounded-lg shadow  bg-gray-800  border-gray-700"
             >
-                <h4 className="font-bold p-0 text-gray-900 dark:text-white">
+                <h4 className="font-bold p-0 text-gray-900 ">
                     {props.title}
                 </h4>
 
                 <p
-                    className="mb-3 font-normal text-gray-700 dark:text-gray-400 sub-title"
+                    className="mb-3 font-normal text-gray-700  text-gray-400 sub-title"
                 >
                     2023-5-8
                 </p>
