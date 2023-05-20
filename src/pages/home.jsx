@@ -55,6 +55,7 @@ export default function Home() {
                     <Featured
                         title="OWDA's Solar-Powered River Intake System: Transforming Water Accessibility in The Somali Region"
                         body="The importance of sustainable water management in rural communities cannot be overstated. In many areas of the world, access to clean water is a daily struggle, particularly in regions affected by wa..."
+                        button=""
                     />
                 </div>
                 <div className="center text-center">

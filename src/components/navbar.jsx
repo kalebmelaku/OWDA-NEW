@@ -1,11 +1,14 @@
-import { useState } from 'react';
+/* eslint-disable no-unused-vars */
+import { useState, useEffect } from 'react';
 import logo from '../assets/main_logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function NavBar() {
     const [showNav, setShowNav] = useState(false);
+    const location = useLocation()
+
     const handleMenuToggle = () => {
         setShowNav(!showNav);
     };
@@ -67,37 +70,37 @@ export default function NavBar() {
                             <li className='nav-link'>
                                 <a
                                     href="/who"
-                                    className="block py-2 pl-3 pr-4 md:p-0 "
+                                    className={` ${location.pathname === '/who' ? 'active' : ''} block py-2 pl-3 pr-4 md:p-0 `}
                                 >Who we are</a>
                             </li>
                             <li className='nav-link'>
                                 <a
                                     href="/what"
-                                    className="block py-2 pl-3 pr-4 text-black  md:border-0 md:p-0  "
+                                    className={`${location.pathname === '/what' ? 'active' : ''} block py-2 pl-3 pr-4 text-black  md:border-0 md:p-0`}
                                 >What we do</a>
                             </li>
                             <li className='nav-link'>
                                 <a
                                     href="/about"
-                                    className="block py-2 pl-3 pr-4  md:border-0 md:p-0  "
+                                    className={`${location.pathname === '/about' ? 'active' : ''} block py-2 pl-3 pr-4  md:border-0 md:p-0`}
                                 >About Us</a>
                             </li>
                             <li className='nav-link'>
                                 <a
                                     href="/publications"
-                                    className="block py-2 pl-3 pr-4  md:border-0 md:p-0  "
+                                    className={`${location.pathname === '/publications' ? 'active' : ''} block py-2 pl-3 pr-4  md:border-0 md:p-0`}
                                 >Publications</a>
                             </li>
                             <li className='nav-link'>
                                 <a
                                     href="/resource"
-                                    className="block py-2 pl-3 pr-4  md:border-0 md:p-0  "
+                                    className={`${location.pathname === '/resource' ? 'active' : ''} block py-2 pl-3 pr-4  md:border-0 md:p-0 `}
                                 >Resource center</a>
                             </li>
                             <li className='nav-link'>
                                 <Link
                                     to="/vacancy"
-                                    className="block py-2 pl-3 pr-4  md:border-0 md:p-0  "
+                                    className={`${location.pathname === '/vacancy' ? 'active' : ''} block py-2 pl-3 pr-4  md:border-0 md:p-0 `}
                                 >Vacancy</Link>
                             </li>
                         </ul>
