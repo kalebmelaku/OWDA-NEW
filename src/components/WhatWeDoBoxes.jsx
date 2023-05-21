@@ -1,6 +1,6 @@
 import { PropTypes } from "prop-types";
 import { Link } from "react-router-dom";
-import Img from '../assets/home-img.png'
+import Img from '../assets/home-img.png';
 export default function WhatBox(props) {
     return (
         <>
@@ -11,13 +11,13 @@ export default function WhatBox(props) {
                     <img src={Img} alt="image" />
                 </div>
                 <div className="text-container flex items-center justify-between p-4">
-                    <p className="text-lg">{ props.title }</p>
-                    <Link to='/program'>Learn More</Link>
-                </div>  
+                    <p className="text-lg">{props.title}</p>
+                    <Link to={{ pathname: '/program', search: `?title=${props.title}&image=${Img}` }}>Learn More</Link>
+                </div>
             </div>
         </>
     );
 }
 WhatBox.propTypes = {
     title: PropTypes.string.isRequired,
-  };
+};

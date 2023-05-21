@@ -124,6 +124,9 @@ a.card-link {
   .grid-container {
     grid-template-columns: repeat(2, 1fr) !important;
   }
+  .hero-section h1 {
+    font-size: 2rem !important;
+  }
 }
 @media (max-width: 560px) {
   .fs-md-2 {
@@ -150,6 +153,10 @@ a.card-link {
   section.join-us .join-us-elements {
     display: none;
     grid-template-columns: 1fr !important;
+  }
+  .hero-section h1 {
+    padding: 0 1rem;
+    font-size: 1.5rem !important;
   }
   footer .footer-items {
     grid-template-columns: 1fr !important;
@@ -572,6 +579,41 @@ section.join-us .join-us-elements .detail a {
   color: #fff;
 }
 
+.hero-section img {
+  max-height: 50vh;
+  height: auto;
+}
+.hero-section img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.992);
+  z-index: 10;
+}
+.hero-section .container {
+  position: relative !important;
+}
+.hero-section h1 {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.donor-box {
+  margin: 3rem auto;
+  background-color: #fddf9b;
+  padding: 1rem;
+}
+.donor-box ul, .donor-box li {
+  margin: 1rem 0;
+}
+
 footer {
   margin-top: 5rem;
 }
@@ -587,7 +629,9 @@ footer .footer-items .first-item .lead {
   font-weight: bold;
   padding-top: 1rem;
 }
-footer .footer-items p, footer .footer-items a, footer .footer-items li {
+footer .footer-items p,
+footer .footer-items a,
+footer .footer-items li {
   font-size: 0.9rem;
 }
 footer .footer-items ul li {
@@ -599,7 +643,8 @@ footer .footer-items ul li a {
 footer .footer-items ul li a:hover {
   font-weight: bold;
 }
-footer .footer-items h2, footer .footer-items .last-item {
+footer .footer-items h2,
+footer .footer-items .last-item {
   margin-top: 3rem;
 }
 footer .socials {

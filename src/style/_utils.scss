@@ -4,6 +4,7 @@ $green: #009245;
 $black: #2D2926;
 $orange: #E86A2F;
 $light-green: #ccebcb;
+$light-orange: #fddf9b;
 
 $green-hover: rgb(0, 87, 40);
 
@@ -142,6 +143,11 @@ a.card-link {
     .grid-container {
         grid-template-columns: repeat(2, 1fr) !important;
     }
+    .hero-section{
+        h1{
+            font-size: 2rem !important;
+        }
+    }
 }
 
 @media (max-width: 560px) {
@@ -180,6 +186,12 @@ a.card-link {
         .join-us-elements{
             display: none;
             grid-template-columns: 1fr !important;
+        }
+    }
+    .hero-section{
+        h1{
+            padding:0 1rem;
+            font-size: 1.5rem !important;
         }
     }
     footer{

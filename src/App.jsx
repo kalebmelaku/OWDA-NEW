@@ -8,6 +8,8 @@ import WhatWeDo from './pages/whatWeDo';
 import About from './pages/about';
 import Publications from './pages/publications'
 import Contact from './pages/contact'
+import Donate from './pages/donate';
+import Programs from './pages/programs';
 
 export default function App(){
   return (
@@ -22,6 +24,8 @@ export default function App(){
         <Route path='/about' element={<About/>} />
         <Route path='/publications' element={<Publications/>} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/donate' element={<Donate />} />
+        <Route path='/program' element={<Programs />} />
       </Routes>
     </>
   )
