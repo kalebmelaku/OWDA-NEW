@@ -8,9 +8,12 @@ export default function Donate() {
         <>
            <Banner/>
            <NavBar/>
-           <div className="container mx-auto p-2 flex-container mb-4 grid-container w-full">
-                <DonationCard title='Ebirr'/>
-                <DonationCard title='Ebirr'/>
+            <h1 className="text-2xl mt-4 py-4 font-bold text-center"> Donate to our Programs </h1>
+           <div className="container w-full mx-auto p-2 flex-container mb-4 w-full">
+                <DonationCard title='Ebirr' number='222023'/>
+                <DonationCard title='Ebirr' number='222023'/>
+                <DonationCard title='Ebirr' number='222023'/>
+                <DonationCard title='Ebirr' number='222023'/>
            </div>
 
            <Footer/>
