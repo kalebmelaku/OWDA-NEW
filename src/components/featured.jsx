@@ -16,7 +16,8 @@ export default function Featured(props) {
 						<p className="mb-4">
 							{props.body}
 						</p>
-						{props.button === 'Download' ? <a href="#" className="btn btn-green">Download</a> : <a href="#" className="btn btn-green">Read More</a>}
+						{props.button === 'Download' ? <a href="#" className="btn btn-green">Download</a> 
+						: <Link to={{ pathname: '/stories', search: `?title=${props.title}&image=${Img}` }} className="btn btn-green">Read More</Link>}
 					
 					</div>
 					

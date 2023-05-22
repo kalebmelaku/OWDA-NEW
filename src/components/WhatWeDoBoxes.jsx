@@ -12,7 +12,7 @@ export default function WhatBox(props) {
                 </div>
                 <div className="text-container flex items-center justify-between p-4">
                     <p className="text-lg">{props.title}</p>
-                    <Link to={{ pathname: '/program', search: `?title=${props.title}&image=${Img}` }}>Learn More</Link>
+                    <Link className="green" to={{ pathname: '/program', search: `?title=${props.title}&image=${Img}` }}>Learn More</Link>
                 </div>
             </div>
         </>

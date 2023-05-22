@@ -16,7 +16,7 @@ export default function NavBar() {
         <>
             <nav className="bg-white  border-0 shadow-2xl">
                 <div
-                    className="max-w-screen-xl container flex flex-wrap items-center justify-end mx-auto p-1 px-4"
+                    className="container flex flex-wrap items-center justify-end mx-auto p-1 px-2"
                 >
 
                     <div className={`w-full `}>
@@ -42,7 +42,7 @@ export default function NavBar() {
             </nav>
             <nav className="bg-white  bg-gray-900">
                 <div
-                    className="max-w-screen-xl container flex flex-wrap items-center justify-between mx-auto p-2 px-4"
+                    className=" container flex flex-wrap items-center justify-between mx-auto px-2"
                 >
                     <a href="/" className="navbar-brand">
                         <img src={logo} alt="logo" width="60" height="" className="d-inline-block align-text-top" />
@@ -106,7 +106,7 @@ export default function NavBar() {
                         </ul>
                     </div>
                         <div className={`flex md:block ${showNav ? 'block' : 'hidden'} ml-4 mt-4 md:mt-0`}>
-                            <Link to='/donate'  className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium-lg text-sm px-4 py-2 text-center mr-3 md:mr-0  bg-red-600  hover:bg-blue-700  focus:ring-red-800">Donate</Link>
+                            <Link to='/donate'  className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium-lg text-sm px-4 py-2 text-center  md:mr-0  bg-red-600  hover:bg-blue-700  focus:ring-red-800">Donate</Link>
                         </div>
                 </div>
             </nav>

@@ -362,7 +362,6 @@ input::placeholder {
 
 section.join-us {
     margin-top: 5rem;
-
     .join-us-elements {
         background-color: #ccebcb;
         display: grid;
@@ -518,6 +517,29 @@ section.join-us {
         margin: 1rem 0;
     }
 }
+.news-letter{
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        input[type='email']{
+            width: 100%;
+        }
+        input{
+            border-radius: 0 !important;
+            height: 100% !important;
+            padding: 1rem .5rem;
+            border: 0 !important;
+        }
+        input[type="submit"]{
+            width: 40%;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
 footer {
     margin-top: 5rem;
 

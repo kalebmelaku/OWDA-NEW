@@ -23,7 +23,7 @@ export default function Programs() {
                 </div>
             </div>
             <div className="content container mx-auto p-2">
-                <p className="lead text-2xl mt-4 py-4">OWDA's Livelihood Program is aimed at improving the economic
+                <p className="lead text-2xl mt-4 py-4">OWDAs Livelihood Program is aimed at improving the economic
                     well-being of communities in the Somali region of Ethiopia. We believe that
                     providing livelihood opportunities is essential for reducing poverty and improving
                     the overall well-being of communities.</p>

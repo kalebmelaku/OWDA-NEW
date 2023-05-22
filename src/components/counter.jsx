@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+/* eslint-disable no-unused-vars */
+import { useState, useEffect } from 'react';
 import { PropTypes } from "prop-types";
 
 const Counter = (props) => {
   let [count, setCount] = useState(0);
-  const [prevCount, setPrevCount] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
