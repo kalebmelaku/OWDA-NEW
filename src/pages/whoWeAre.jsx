@@ -1,16 +1,17 @@
 import Banner from "../components/banner";
 import NavBar from "../components/navbar";
-import Carousal from "../components/carousal";
 import Featured from "../components/featured";
 import JoinUs from "../components/joinus";
 import Footer  from "../components/footer";
+import StaticCarousel from "../components/staticCarousal";
 
 export default function WhoWeAre() {
     return (
         <>
             <Banner />
             <NavBar />
-            <Carousal />
+            <StaticCarousel title='Who We Are'/>
+            {/* <Carousal /> */}
             <section className="who mt-4 mb-4 text-left container mx-auto px-2">
                 <div>
                     <p className="lead mt-4 w-1/2 text-2xl">We are an local humanitarian organisation that strives for a world free from poverty, fear and oppression.</p>

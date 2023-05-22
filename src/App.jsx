@@ -11,6 +11,7 @@ import Contact from './pages/contact'
 import Donate from './pages/donate';
 import Programs from './pages/programs';
 import Stories from './pages/stories'
+import History from './pages/history'
 
 export default function App(){
   return (
@@ -28,6 +29,7 @@ export default function App(){
         <Route path='/donate' element={<Donate />} />
         <Route path='/program' element={<Programs />} />
         <Route path='/stories' element={<Stories />} />
+        <Route path='/history' element={<History />} />
       </Routes>
     </>
   )

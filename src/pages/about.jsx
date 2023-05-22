@@ -1,16 +1,16 @@
 import Banner from "../components/banner";
 import NavBar from "../components/navbar";
-import Carousal from "../components/carousal";
 import Footer from "../components/footer";
 import Featured from "../components/featured";
 import JoinUs from "../components/joinus";
+import StaticCarousel from "../components/staticCarousal";
 
 export default function About() {
     return (
         <>
             <Banner />
             <NavBar />
-            <Carousal />
+            <StaticCarousel title='About Us'/>
 
             <section className="about container mx-auto px-2">
                 <p className="text-xl mt-4 mb-4">The Organization for Welfare Development in
@@ -85,14 +85,17 @@ export default function About() {
                         <Featured
                             title="What we stand for"
                             body="our mission is to end extreme poverty whatever it takes"
+                            button=''
                         />
                         <Featured
                             title="Our History"
                             body="we have been working for the worlds most vulnerable people for over 50 years"
+                            button=''
                         />
                         <Featured
                             title="Testimonials"
                             body="See what our friends and supporters across the globe have said about us."
+                            button=''
                         />
                     </div>
                 </div>

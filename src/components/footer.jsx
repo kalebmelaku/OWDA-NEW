@@ -37,7 +37,7 @@ function Footer() {
                 <li><Link to="/who">Who we are</Link></li>
                 <li><Link to="/what">What we stand for</Link></li>
                 <li><Link to="/history">Our history</Link></li>
-                <li><Link to="/testimony">Testimonials</Link></li>
+                <li><Link to="#">Testimonials</Link></li>
             </ul>
         </div>
         <div className="third-item">

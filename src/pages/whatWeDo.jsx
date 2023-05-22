@@ -1,18 +1,18 @@
 import Banner from "../components/banner";
 import NavBar from "../components/navbar";
-import Carousal from "../components/carousal";
 import Featured from "../components/featured";
 import WhatBox from "../components/WhatWeDoBoxes";
 import JoinUs from "../components/joinus";
 import Footer  from "../components/footer";
 import { Link } from "react-router-dom";
+import StaticCarousel from "../components/staticCarousal";
 
 export default function WhatWeDo() {
     return (
         <>
             <Banner />
             <NavBar />
-            <Carousal />
+            <StaticCarousel title='What We Do'/>
             <section className="who mt-4 mb-4 text-center container mx-auto px-2">
             <p className="mt-4 w-1/2 mx-auto text-lg text-center ">OWDA implements a huge diversity of programmes, designed to address specific causes of extreme poverty in communities across 9 regions. These programmes are guided by these six thematic focus areas.</p>
             </section>

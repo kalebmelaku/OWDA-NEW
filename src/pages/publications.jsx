@@ -4,7 +4,6 @@ import JoinUs from "../components/joinus"
 import Footer from "../components/footer"
 import NavBar from "../components/navbar"
 import Banner from "../components/banner"
-import Carousal from "../components/carousal"
 import Img from '../assets/home-img.png'
 import { Link } from "react-router-dom"
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,13 +12,14 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import StaticCarousel from "../components/staticCarousal"
 
 export default function Publications(){
     return (
         <>
         <Banner/>
         <NavBar/>
-        <Carousal/>
+        <StaticCarousel title='Publications'/>
             <section className="publication container mx-auto px-2">
             <div className="desc  mg-t-5">
    
