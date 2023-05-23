@@ -2,8 +2,12 @@ import Banner from "../components/banner";
 import DonationCard from "../components/donationCard";
 import Footer from "../components/footer";
 import NavBar from "../components/navbar";
+import { useEffect } from "react";
 
 export default function Donate() {
+    useEffect(()=>{
+        document.title = "OWDA | Donate";
+    }, [])
     return (
         <>
            <Banner/>

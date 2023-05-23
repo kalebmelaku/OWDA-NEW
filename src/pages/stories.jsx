@@ -6,8 +6,12 @@ import JoinUs from "../components/joinus";
 import NavBar from "../components/navbar";
 import {FaFacebookF, FaTwitter, FaInstagram, FaLinkedin, FaYoutube} from 'react-icons/fa'
 import Featured from "../components/featured";
+import { useEffect } from "react";
 
-export default function Stories(){
+export default function Stories() {
+    useEffect(()=>{
+        document.title = "OWDA | Stories";
+    }, [])
     const location = useLocation();
     const title = new URLSearchParams(location.search).get('title');
     const Img = new URLSearchParams(location.search).get('image');

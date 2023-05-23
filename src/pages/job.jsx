@@ -4,7 +4,12 @@ import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSuitcase, faList, faMale, faCalendar, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import Footer from "../components/footer";
+import { useEffect } from "react";
+
 export default function Jobs() {
+    useEffect(()=>{
+        document.title = "OWDA | Job Details";
+    }, [])
     const [isMobView, setIsMobView] = useState(false);
     const toggleMobView = () => {
         setIsMobView(!isMobView);

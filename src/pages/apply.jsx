@@ -4,8 +4,12 @@ import React, { useState } from "react";
 import Banner from "../components/banner";
 import NavBar from "../components/navbar";
 import  Footer  from "../components/footer";
+import { useEffect } from "react";
 
-const JobApplicationForm = () => {
+ function JobApplicationForm() {
+    useEffect(()=>{
+        document.title = "OWDA | Apply";
+    }, [])
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -60,6 +64,6 @@ const JobApplicationForm = () => {
       {/* <Banner/> */}
     </>
   );
-};
+}
 
 export default JobApplicationForm;

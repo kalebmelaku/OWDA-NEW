@@ -4,8 +4,12 @@ import Featured from "../components/featured";
 import JoinUs from "../components/joinus";
 import Footer  from "../components/footer";
 import StaticCarousel from "../components/staticCarousal";
+import { useEffect } from "react";
 
 export default function WhoWeAre() {
+    useEffect(()=>{
+        document.title = "OWDA | Who We Are";
+    }, [])
     return (
         <>
             <Banner />

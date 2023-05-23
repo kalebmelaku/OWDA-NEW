@@ -13,8 +13,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import StaticCarousel from "../components/staticCarousal"
+import { useEffect } from "react";
 
-export default function Publications(){
+export default function Publications() {
+    useEffect(()=>{
+        document.title = "OWDA | Publications";
+    }, [])
     return (
         <>
         <Banner/>

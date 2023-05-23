@@ -6,8 +6,12 @@ import StaticCarousel from "../components/staticCarousal";
 import Famine from '../assets/famin.jpg'
 import Featured from "../components/featured";
 
+import { useEffect } from "react";
 
-export default function History(){
+export default function History() {
+    useEffect(()=>{
+        document.title = "OWDA | History";
+    }, [])
     return (
         <>
             <Banner/>

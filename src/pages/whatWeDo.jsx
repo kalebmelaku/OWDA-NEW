@@ -6,8 +6,12 @@ import JoinUs from "../components/joinus";
 import Footer  from "../components/footer";
 import { Link } from "react-router-dom";
 import StaticCarousel from "../components/staticCarousal";
+import { useEffect } from "react";
 
 export default function WhatWeDo() {
+    useEffect(()=>{
+        document.title = "OWDA | What We Do";
+    }, [])
     return (
         <>
             <Banner />

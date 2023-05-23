@@ -4,8 +4,12 @@ import NavBar from "../components/navbar";
 import JoinUs from "../components/joinus";
 import Footer from "../components/footer";
 import Featured from "../components/featured";
+import { useEffect } from "react";
 
 export default function Programs() {
+    useEffect(()=>{
+        document.title = "OWDA | Programs";
+    }, [])
     const location = useLocation();
     const title = new URLSearchParams(location.search).get("title");
     const Img = new URLSearchParams(location.search).get("image");

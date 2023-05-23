@@ -5,8 +5,12 @@ import JoinUs from "../components/joinus";
 import NavBar from "../components/navbar";
 import Logo from "../assets/logo-contact.png"
 import {FaFacebookF, FaTwitter, FaInstagram, FaLinkedin, FaYoutube} from 'react-icons/fa'
+import { useEffect } from "react";
 
-export default function Contact(){
+export default function Contact() {
+    useEffect(()=>{
+        document.title = "OWDA | Contact";
+    }, [])
     return (
         <>
             <Banner/>
