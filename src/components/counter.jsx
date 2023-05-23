@@ -15,9 +15,9 @@ const Counter = (props) => {
           return count;
         }
       });
-    }, 10);
+    }, 5);
     return () => clearInterval(timer);
-  }, []);
+  });
 
   return (
     <>
